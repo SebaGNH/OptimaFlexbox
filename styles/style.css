@@ -1,0 +1,170 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+
+    background: #000 url(../img/fondo52740.jpg);   
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor{
+    max-width: 1000px;
+    margin: .5% auto;
+    width: 90%;
+    max-width: 1000px;
+    display:flex; 
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+header{ 
+    width: 100%;
+    margin: 50px 0px; 
+    display:flex;   
+    flex-direction: row;   
+    justify-content: space-between;    
+    align-items:center;     /
+}
+
+header .menu a{
+    color: #FFF;
+    text-decoration:none;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+header .menu a:hover{
+    text-decoration:underline;
+    opacity: .7;
+}
+header .logo img{
+    width: 20%
+}
+
+.main{ 
+    background:#fff;
+    width:70%;
+    padding: 20px;
+}
+.main article .thumb{        
+    margin-bottom: 20px;  
+}
+.main article .thumb img{
+    width: 100%;   
+    vertical-align: top; 
+}
+.main article h2{
+    margin-bottom: 20px; 
+    font-weight: normal;
+    font-size: 32px;
+}
+.main article p{
+    margin-bottom: 20px;
+    font-size: 14px; 
+    line-height: 27px;  
+}
+
+
+aside{
+    width: 30%;
+    background: #537dca;
+    padding: 20px;
+    display:flex;   
+    flex-direction: column;    
+    flex-wrap: wrap;  
+    justify-content: space-between;   
+}
+aside .ad{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0px;
+    background:#4264a2;
+}
+
+
+footer{
+    width:100%;
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    opacity: .5;
+    margin:20px 0px;
+    padding: 20px;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items:center;
+} 
+footer .autor{
+    font-size:20px;
+    
+
+}
+footer .redes-sociales a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+footer .redes-sociales a:hover{
+    text-decoration: underline;
+    color: #1F8298;
+}
+
+@media screen and (max-width:800px){
+.main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        flex-direction: row;
+    }
+    aside .ad{
+        width: 40%; 
+    }
+}
+
+@media screen and (max-width:600px){
+    header .logo img{
+    display: none;
+}
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    header .menu{
+        width: 100%;
+        background: rgba(255,255,255, 0.2);
+        text-align:center;
+        padding:20px;
+    }
+    header .menu a{
+        margin: 0px 20px;
+    }
+    header .logo{
+        padding: 20px;
+    }
+    footer{
+        flex-direction: column;
+        text-align:center;
+    }
+    footer .autor{
+        order: 2;
+    }
+    footer .redes-sociales{
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    aside{
+        display:none;
+
+    }
+}
